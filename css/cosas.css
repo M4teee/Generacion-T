@@ -1,0 +1,36 @@
+.animacion-card {
+    transition: transform 0.3s;
+    border: 1px transparent;
+}
+
+.animacion-card:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #17B06B;
+    box-shadow: #17B06B 0px 5px 15px;
+}
+
+.barrita-tareas{
+    transition: transform 0.3s;
+}
+
+.barrita-tareas:hover{
+    transform: scale(0.9);
+    color: #17B06B;
+}
+
+#inicio {
+    transition: transform 0.3s;
+}
+
+#inicio:hover{
+    transform: scale(1.1);
+    color: #17B06B;
+}
+
+.titulo-principal {
+    border: 2px solid #17B06B;
+    box-shadow: #17B06B 0px 5px 15px;;
+    border-radius: 15px;
+    padding: 5%;
+}
