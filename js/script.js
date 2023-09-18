@@ -10,10 +10,10 @@ function registrarUsuario() {
     if (usuario && contrasena) {
         if (!usuarios.hasOwnProperty(usuario)) {
             usuarios[usuario] = contrasena;
-            alert("Registro exitoso. Ahora puedes iniciar sesión.");
+            alert("Registro exitoso. Ahora podes iniciar sesión.");
             window.location = "inicio-sesion.html"; 
         } else {
-            alert("El nombre de usuario ya existe. Por favor, elige otro.");
+            alert("El nombre de usuario ya existe. Por favor, elegi otro.");
         }
     } else {
         alert("Por favor, completa todos los campos.");
@@ -33,7 +33,7 @@ function login() {
             alert("Inicio de sesión exitoso. ¡Bienvenido, " + user + "!");
             window.location = "inicio.html";
         } else {
-            alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
+            alert("Usuario o contraseña incorrectos. Por favor, intentalo de nuevo.");
         }
     } else {
         alert("Por favor, completa todos los campos.");
