@@ -2,19 +2,16 @@
 usuarios = {
     "Miguel": "1234",
 };
-
+//funcion para registrarse
 function registrarUsuario() {
-    var usuario = document.getElementById("username").value.toLowerCase(); // Convertir a minúsculas
+    var usuario = document.getElementById("username").value.toLowerCase();
     var contrasena = document.getElementById("password").value;
 
     if (usuario && contrasena) {
-        // Verifica si el usuario ya existe
         if (!usuarios.hasOwnProperty(usuario)) {
-            // Registra al nuevo usuario
-            usuarios[usuario] = contrasena; // Cambio de == a =
+            usuarios[usuario] = contrasena;
             alert("Registro exitoso. Ahora puedes iniciar sesión.");
-            // Redirige a la página de inicio de sesión o donde prefieras
-            window.location = "inicio-sesion.html"; // Cambia el nombre de la página de inicio de sesión si es necesario
+            window.location = "inicio-sesion.html"; 
         } else {
             alert("El nombre de usuario ya existe. Por favor, elige otro.");
         }
@@ -32,10 +29,9 @@ function login() {
     pass = document.getElementById("login-password").value;
 
     if (user && pass) {
-        // Verifica si el usuario y la contraseña coinciden con los registrados
         if (usuarios.hasOwnProperty(user) && usuarios[user] === pass) {
             alert("Inicio de sesión exitoso. ¡Bienvenido, " + user + "!");
-            window.location = "inicio.html"; // Cambia el nombre de la página de inicio si es necesario
+            window.location = "inicio.html";
         } else {
             alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
         }
