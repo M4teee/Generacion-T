@@ -49,16 +49,16 @@
           <form>
             <div class="form-group">
               <label for="usuario">Nombre de Usuario</label>
-              <input type="text" class="form-control" id="usuario" 
+              <input type="text" class="form-control" id="login-username" 
                 placeholder="Usuario">
               <small id="emailHelp" class="form-text text-muted">Nunca compartiremos esto.</small>
               <br>
               <label for="contra">Contraseña</label>
-              <input class="form-control" type="password" id="contra">
+              <input class="form-control" type="password" id="login-password">
               <small id="emailHelp" class="form-text text-muted">Contiene mas de 8 caracteres.</small>
 
             </div>
-            <button type="button" class="btn btn-success btn-shadow px-3 my-2 ml-0 text-left" id="boton">Iniciar sesión</button>
+            <button type="button" class="btn btn-success btn-shadow px-3 my-2 ml-0 text-left" onclick="login()">Iniciar sesión</button>
           </form>
           <br>
           <p>No tenés una cuenta? <a href="crear-cuenta.html">Creala.</a></p>
