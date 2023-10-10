@@ -28,6 +28,7 @@ function registrarUsuario() {
 
 
 
+
 // Función para iniciar sesión
 function login() {
     var user, pass;
